@@ -1,5 +1,5 @@
 package com.logan.curso.springboot.error.springboot_error.Controllers;
-
+//Este comentario no tiene importancia, es solo para github
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +34,7 @@ public class HandlerExceptionController {
     public Map<String, Object> numberFormatException(Exception ex){
 
         Map<String, Object> error = new HashMap<>();
-        
+
         error.put("date", new Date());
         error.put("error", "numero inavlido o incorrecto , no tiene formato de digito!");
         error.put("message", ex.getMessage());
