@@ -1,9 +1,11 @@
 package com.logan.curso.springboot.error.springboot_error.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/app")
 public class AppController {
 
     @GetMapping("/app")
@@ -14,4 +16,7 @@ public class AppController {
         System.out.println(value);
         return "ok 200";
     }
+
+   // @GetMapping("/show{id}")
+
 }
